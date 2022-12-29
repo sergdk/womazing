@@ -161,13 +161,13 @@ function sendToTelegram($data)
     if(carbon_get_theme_option('telegram_token') != ''){
         $tg_token = carbon_get_theme_option('telegram_token');
     } else{
-        $tg_token = '1036526242:AAFLC_x7aSWWDijoGqjJ1uLs69oPQzjCkvE';
+        $tg_token = '';
     }
 
     if(carbon_get_theme_option('telegram_chat_id') != ''){
         $tg_chatid = carbon_get_theme_option('telegram_chat_id');
     } else{
-        $tg_chatid = '-1001658311451';
+        $tg_chatid = '';
     }
 
     $send_data = [];
